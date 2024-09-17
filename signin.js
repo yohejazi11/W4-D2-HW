@@ -13,9 +13,10 @@ signinBTN.addEventListener("click", () => {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
+            console.log("userData")
 
             let userData = data.filter(element => emailInput.value == element.email && passInput.value == element.password);
-
+            console.log("userData")
             if (userData.length>0) {
                 let userId = userData[0].id;
                 sessionStorage.setItem('userId', userId);
