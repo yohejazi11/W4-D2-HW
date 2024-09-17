@@ -1,0 +1,408 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+@media only screen and (max-width: 600px) {
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: calc(100% - 20px);
+        background-color: #8EACCD;
+        box-shadow: 3px 3px 20px 0px #4c4a4a;
+    }
+
+    .logo {
+        width: 3vw;
+    }
+
+    .nav-ul {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        gap: 0.5rem;
+        list-style: none;
+    }
+
+    .nav-ul li,
+    .nav-ul a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+
+    }
+
+    .sign-out-btn {
+        height: 5vh;
+        background-color: #e2f4f1;
+        outline: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        color: #38487b;
+        border: 1px solid #8EACCD;
+
+    }
+
+    .sign-out-btn:hover {
+        color: white;
+        background-color: #38487b;
+    }
+
+    .sign-in-box,
+    .sign-up-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        box-shadow: 3px 4px 20px 0px #4c4a4a;
+        z-index: 10;
+    }
+
+    .info-input-box-bg {
+        width: 100%;
+
+        display: flex;
+        background-color: #8EACCD;
+        border-radius: 25px 25px 0 0
+
+    }
+
+    .info-input-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40vh;
+        border-radius: 25px 25px 25px 25px;
+        background-color: #D2E0FB;
+    }
+
+    .info-input-box form {
+        display: flex;
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 70%;
+        flex-direction: column;
+        background-color: #e2f4f1;
+        padding: 10px;
+        box-shadow: 3px 8px 10px 4px #8EACCD;
+    }
+
+    .info-input-box form h2 {
+        margin: 0;
+        color: #8EACCD;
+
+    }
+
+    .info-input-box form input {
+        width: 80%;
+        height: 5vh;
+        background-color: #e2f4f1;
+        outline: none;
+        border-radius: 10px;
+        padding-left: 20px;
+        font-size: 1rem;
+        border: 1px solid #8EACCD;
+    }
+
+    .pic-input-box-bg {
+        width: 25vw;
+        border-radius: 25px 0 0 25px;
+
+        background-color: #D2E0FB;
+    }
+
+    .pic-input-box {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        background-color: #8EACCD;
+        height: 10vh;
+        border-radius: 0px 0 25px 25px;
+    }
+
+    .pic-input {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+
+    .sign-in-box-btn,
+    .sign-up-box-btn {
+        width: 80%;
+        height: 5vh;
+        background-color: #e2f4f1;
+        outline: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        border: 1px solid #8EACCD;
+    }
+
+    .sign-in-box-btn:hover,
+    .sign-up-box-btn:hover {
+        color: #e2f4f1;
+        background-color: #38487b;
+    }
+
+    .bg-div {
+        width: 100vw;
+        height: 120vh;
+        display: flex;
+    }
+
+    .left-side-back-bg {
+        width: 70vw;
+        height: 120vh;
+        background-color: #f56893;
+    }
+
+    .left-side-bg {
+        width: 70vw;
+        height: 120vh;
+        background-color: #38487b;
+        border-radius: 0 0 60% 0;
+    }
+
+    .right-side-back-bg {
+        width: 30vw;
+        height: 120vh;
+        background-color: #38487b;
+    }
+
+    .right-side-bg {
+        width: 30vw;
+        height: 120vh;
+        background-color: #f56893;
+        border-radius: 40% 0 0 0;
+
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        width: calc(100% - 40px);
+        background-color: #8EACCD;
+        box-shadow: 3px 3px 20px 0px #4c4a4a;
+    }
+
+    .logo {
+        width: 3vw;
+    }
+
+    .nav-ul {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    .nav-ul li,
+    .nav-ul a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 900;
+        letter-spacing: 4px;
+
+    }
+
+    .sign-out-btn {
+        height: 5vh;
+        background-color: #e2f4f1;
+        outline: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        color: #38487b;
+        border: 1px solid #8EACCD;
+
+    }
+
+    .sign-out-btn:hover {
+        color: white;
+        background-color: #38487b;
+    }
+
+    .sign-in-box,
+    .sign-up-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: row-reverse;
+        border-radius: 25px;
+        box-shadow: 3px 4px 20px 0px #4c4a4a;
+        z-index: 10;
+    }
+
+    .info-input-box-bg {
+        width: 25vw;
+
+        display: flex;
+        background-color: #8EACCD;
+        border-radius: 0 25px 25px 0;
+
+    }
+
+    .info-input-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 70vh;
+        border-radius: 100px 25px 25px 0;
+        background-color: #D2E0FB;
+    }
+
+    .info-input-box form {
+        display: flex;
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 70%;
+        flex-direction: column;
+        background-color: #e2f4f1;
+        padding: 10px;
+        box-shadow: 3px 8px 10px 4px #8EACCD;
+    }
+
+    .info-input-box form h2 {
+        margin: 0;
+        color: #8EACCD;
+
+    }
+
+    .info-input-box form input {
+        width: 80%;
+        height: 5vh;
+        background-color: #e2f4f1;
+        outline: none;
+        border-radius: 10px;
+        padding-left: 20px;
+        font-size: 1rem;
+        border: 1px solid #8EACCD;
+    }
+
+    .pic-input-box-bg {
+        width: 25vw;
+        border-radius: 25px 0 0 25px;
+
+        background-color: #D2E0FB;
+    }
+
+    .pic-input-box {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        background-color: #8EACCD;
+        height: 70vh;
+        border-radius: 25px 0 100px 25px;
+    }
+
+    .pic-input {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+
+    .sign-in-box-btn,
+    .sign-up-box-btn {
+        width: 80%;
+        height: 5vh;
+        background-color: #e2f4f1;
+        outline: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        border: 1px solid #8EACCD;
+    }
+
+    .sign-in-box-btn:hover,
+    .sign-up-box-btn:hover {
+        color: #e2f4f1;
+        background-color: #38487b;
+    }
+
+    .bg-div {
+        width: 100vw;
+        height: 120vh;
+        display: flex;
+    }
+
+    .left-side-back-bg {
+        width: 70vw;
+        height: 120vh;
+        background-color: #f56893;
+    }
+
+    .left-side-bg {
+        width: 70vw;
+        height: 120vh;
+        background-color: #38487b;
+        border-radius: 0 0 60% 0;
+    }
+
+    .right-side-back-bg {
+        width: 30vw;
+        height: 120vh;
+        background-color: #38487b;
+    }
+
+    .right-side-bg {
+        width: 30vw;
+        height: 120vh;
+        background-color: #f56893;
+        border-radius: 40% 0 0 0;
+
+    }
+}
